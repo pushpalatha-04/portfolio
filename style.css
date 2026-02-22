@@ -1,0 +1,279 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #fafafa;
+    color: #111;
+}
+
+/* HEADER */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 40px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: black;
+}
+
+/* MAIN CONTENT */
+.main-content {
+    padding: 140px 80px 60px 80px;
+}
+
+section {
+    padding: 80px 0;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+section:last-child {
+    border-bottom: none;
+}
+
+/* HERO SECTION */
+.hero {
+    padding: 120px 0;
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    gap:0px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.hero-left img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #111;
+}
+
+.hero-right {
+    max-width: 550px;
+}
+
+.intro-text {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 5px;
+}
+
+.hero-name {
+    font-size: 46px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.hero-role {
+    font-size: 20px;
+    font-weight: 500;
+    color: #555;
+    margin: 10px 0 15px 0;
+}
+
+.hero-desc {
+    line-height: 1.6;
+    color: #444;
+}
+
+.hero-buttons {
+    margin-top: 25px;
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.primary-btn {
+    background: #111;
+    color: white;
+}
+
+.primary-btn:hover {
+    background: #333;
+}
+
+.secondary-btn {
+    border: 1px solid #ccc;
+    color: #111;
+    background: white;
+}
+
+.secondary-btn:hover {
+    border-color: #111;
+}
+
+/* SKILLS */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.tags span {
+    background: #e5e5e5;
+    padding: 6px 12px;
+    border-radius: 20px;
+    margin: 5px;
+    display: inline-block;
+}
+
+/* PROJECTS */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+.project-card {
+    background: #1a1a1a;
+    color: white;
+    padding: 30px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.tech-tags span {
+    border: 1px solid white;
+    padding: 5px 12px;
+    border-radius: 20px;
+    margin: 5px;
+    display: inline-block;
+    font-size: 12px;
+}
+
+.view-link {
+    color: white;
+    text-decoration: underline;
+}
+
+/* CONTACT */
+.contact-info a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+/* INTERNSHIPS & CERTIFICATIONS */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.info-card {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    border: 1px solid #e5e5e5;
+    transition: 0.3s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+}
+
+.org-name {
+    font-weight: 600;
+    color: #333;
+    margin: 5px 0;
+}
+
+.duration {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.view-btn {
+    margin-top: 12px;
+    padding: 6px 14px;
+    border: none;
+    background: #111;
+    color: white;
+    border-radius: 5px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.view-btn:hover {
+    background: #333;
+}
+
+/* MODAL */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    max-width: 80%;
+    max-height: 80%;
+    border-radius: 8px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    font-size: 35px;
+    color: white;
+    cursor: pointer;
+}
